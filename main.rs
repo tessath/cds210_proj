@@ -1,3 +1,12 @@
+use ndarray::{Array2};
+use linfa_trees::DecisionTree;
+use linfa::prelude::*;
+use serde::Deserialize;
+use std::error::Error;
+use std::fs::File;
+use std::io::Write;
+
+
 #[derive(Debug, Deserialize)]
 struct DirtyHouseRecord {
     area: f64,
@@ -40,7 +49,7 @@ fn process_csv(file_path: &str) -> Result<Vec<CleanHouseRecord>, Box<dyn Error>>
     for result in rdr.deserialize::<DirtyHouseRecord>() {
         match result {
             Ok(record) => cleanv.push(clean_csv(record)),
-            Err(err) => println!("{}", err),
+            Err(err) => eprintln!("Error reading record: {}", err), // Improved error handling
         }
     }
 
@@ -50,42 +59,54 @@ fn process_csv(file_path: &str) -> Result<Vec<CleanHouseRecord>, Box<dyn Error>>
 
 
 fn main() -> Result<(), Box<dyn Error>> {
-    let file_path = "C:/Users/tessa/ds210_proj/House Price Prediction Dataset.csv"; 
+    let file_path = "C:/Users/tessa/ds210_proj/House Price Prediction Dataset.csv"; // Path to your dataset
+
+
     let cleanv = process_csv(file_path)?;
     let mut flat_values: Vec<f64> = Vec::new();
     let mut labels: Vec<usize> = Vec::new();
 
 
     for record in &cleanv {
-        flat_values.push(record.area);
-        flat_values.push(record.bedrooms as f64);
-        flat_values.push(record.bathrooms);
-        flat_values.push(record.floors);
-        flat_values.push(record.year_built);
-        labels.push((record.price > 500000) as usize); 
+        flat_values.extend_from_slice(&[
+            record.area,
+            record.bedrooms as f64,
+            record.bathrooms,
+            record.floors,
+            record.year_built,
+        ]);
+        labels.push((record.price > 500_000) as usize); 
     }
 
 
     let array = Array2::from_shape_vec((cleanv.len(), 5), flat_values)
-    .expect("Error creating ndarray");
-let labels_array = Array2::from_shape_vec((labels.len(), 1), labels)
-    .expect("Error creating labels array");
+        .map_err(|_| "Failed to create feature matrix from the input data")?;
+    let labels_array = Array2::from_shape_vec((labels.len(), 1), labels)
+        .map_err(|_| "Failed to create label array from the input data")?;
 
 
-let dataset = Dataset::new(array, labels_array.column(0).to_owned())
-    .with_feature_names(vec!["area", "bedrooms", "bathrooms", "floors", "year_built"]);
+    let dataset = Dataset::new(array, labels_array.column(0).to_owned())
+        .with_feature_names(vec!["area", "bedrooms", "bathrooms", "floors", "year_built"]);
+
     let decision_tree = DecisionTree::params()
-        .max_depth(Some(4))
-        .fit(&dataset)
-        .expect("Failed to train decision tree");
-
+        .max_depth(Some(6)) 
+        .fit(&dataset)?;
 
     let pred = decision_tree.predict(&dataset);
-    let cm = pred.confusion_matrix(&dataset).expect("Failed to compute confusion matrix");
+    let cm = pred.confusion_matrix(&dataset)?;
     println!("Accuracy: {:?}", cm.accuracy());
+
+    let mut tikz_file = File::create("decision_tree_visual.tex")
+        .map_err(|_| "Failed to create output TikZ file")?;
+    tikz_file.write_all(
+        decision_tree
+            .export_to_tikz()
+            .with_legend()
+            .to_string()
+            .as_bytes(),
+    )?;
+    println!("TikZ visualization saved as 'decision_tree_visual.tex'. Compile it with LaTeX!");
 
 
     Ok(())
 }
-
-
