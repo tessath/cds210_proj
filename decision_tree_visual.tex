@@ -1,0 +1,1447 @@
+
+\documentclass[margin=10pt]{standalone}
+\usepackage{tikz,forest}
+\usetikzlibrary{arrows.meta}
+\forestset{
+default preamble={
+before typesetting nodes={
+  !r.replace by={[, coordinate, append]}
+},  
+where n children=0{
+  tier=word,
+}{  
+  %diamond, aspect=2,
+},  
+where level=0{}{
+  if n=1{
+    edge label={node[pos=.2, above] {Y}},
+  }{  
+    edge label={node[pos=.2, above] {N}},
+  }   
+},  
+for tree={
+  edge+={thick, -Latex},
+  s sep'+=2cm,
+  draw,
+  thick,
+  edge path'={ (!u) -| (.parent)},
+  align=center,
+}   
+}
+}\begin{document}\begin{forest}[Val($3$) $ \leq 2.50$ \\ Imp. $0.00$
+	[Val($0$) $ \leq 510.50$ \\ Imp. $0.00$
+		[Val($0$) $ \leq 507.00$ \\ Imp. $0.03$
+			[Val($0$) $ \leq 504.50$ \\ Imp. $0.38$
+				[Label: 0]
+				[Label: 1]]
+			[Label: 0]]
+		[Val($0$) $ \leq 813.50$ \\ Imp. $0.00$
+			[Val($0$) $ \leq 776.00$ \\ Imp. $0.03$
+				[Val($0$) $ \leq 770.00$ \\ Imp. $0.02$
+					[Val($0$) $ \leq 736.50$ \\ Imp. $0.02$
+						[Val($0$) $ \leq 733.50$ \\ Imp. $0.03$
+							[Val($4$) $ \leq 1975.50$ \\ Imp. $0.02$
+								[Val($0$) $ \leq 659.00$ \\ Imp. $0.03$
+									[Val($4$) $ \leq 1924.50$ \\ Imp. $0.03$
+										[Val($0$) $ \leq 635.00$ \\ Imp. $0.18$
+											[Val($0$) $ \leq 577.50$ \\ Imp. $0.08$
+												[Val($0$) $ \leq 520.50$ \\ Imp. $0.08$
+													[Label: 1]
+													[Val($0$) $ \leq 535.50$ \\ Imp. $0.17$
+														[Label: 0]
+														[Label: 1]]]
+												[Label: 1]]
+											[Label: 0]]
+										[Val($0$) $ \leq 601.50$ \\ Imp. $0.04$
+											[Val($0$) $ \leq 569.00$ \\ Imp. $0.24$
+												[Val($0$) $ \leq 539.00$ \\ Imp. $0.03$
+													[Label: 1]
+													[Val($0$) $ \leq 549.50$ \\ Imp. $0.38$
+														[Label: 0]
+														[Label: 1]]]
+												[Label: 0]]
+											[Label: 1]]]
+									[Val($0$) $ \leq 687.50$ \\ Imp. $0.08$
+										[Val($0$) $ \leq 663.50$ \\ Imp. $0.12$
+											[Val($0$) $ \leq 662.00$ \\ Imp. $0.50$
+												[Label: 0]
+												[Label: 1]]
+											[Label: 0]]
+										[Val($0$) $ \leq 719.00$ \\ Imp. $0.18$
+											[Val($0$) $ \leq 701.50$ \\ Imp. $0.05$
+												[Label: 1]
+												[Val($0$) $ \leq 704.00$ \\ Imp. $0.44$
+													[Label: 0]
+													[Label: 1]]]
+											[Label: 0]]]]
+								[Val($0$) $ \leq 638.50$ \\ Imp. $0.07$
+									[Val($0$) $ \leq 562.00$ \\ Imp. $0.18$
+										[Val($0$) $ \leq 554.50$ \\ Imp. $0.08$
+											[Val($0$) $ \leq 544.00$ \\ Imp. $0.17$
+												[Label: 1]
+												[Label: 0]]
+											[Label: 1]]
+										[Label: 0]]
+									[Val($0$) $ \leq 706.50$ \\ Imp. $0.06$
+										[Val($0$) $ \leq 678.50$ \\ Imp. $0.26$
+											[Label: 1]
+											[Label: 0]]
+										[Label: 1]]]]
+							[Label: 0]]
+						[Label: 1]]
+					[Label: 0]]
+				[Label: 1]]
+			[Val($0$) $ \leq 1755.00$ \\ Imp. $0.00$
+				[Val($0$) $ \leq 1216.50$ \\ Imp. $0.01$
+					[Val($0$) $ \leq 1187.00$ \\ Imp. $0.02$
+						[Val($0$) $ \leq 832.00$ \\ Imp. $0.02$
+							[Label: 0]
+							[Val($4$) $ \leq 2020.50$ \\ Imp. $0.01$
+								[Val($0$) $ \leq 1160.00$ \\ Imp. $0.01$
+									[Val($0$) $ \leq 906.50$ \\ Imp. $0.01$
+										[Val($0$) $ \leq 884.50$ \\ Imp. $0.04$
+											[Val($0$) $ \leq 873.00$ \\ Imp. $0.10$
+												[Val($0$) $ \leq 863.50$ \\ Imp. $0.09$
+													[Val($0$) $ \leq 859.50$ \\ Imp. $0.11$
+														[Val($0$) $ \leq 836.00$ \\ Imp. $0.11$
+															[Label: 1]
+															[Val($0$) $ \leq 840.50$ \\ Imp. $0.11$
+																[Label: 0]
+																[Val($0$) $ \leq 854.50$ \\ Imp. $0.17$
+																	[Val($0$) $ \leq 843.00$ \\ Imp. $0.11$
+																		[Label: 0]
+																		[Label: 1]]
+																	[Label: 0]]]]
+														[Label: 1]]
+													[Label: 0]]
+												[Label: 1]]
+											[Val($0$) $ \leq 890.50$ \\ Imp. $0.06$
+												[Label: 0]
+												[Val($0$) $ \leq 891.50$ \\ Imp. $0.11$
+													[Label: 1]
+													[Val($0$) $ \leq 894.50$ \\ Imp. $0.04$
+														[Val($0$) $ \leq 893.00$ \\ Imp. $0.50$
+															[Label: 0]
+															[Label: 1]]
+														[Val($0$) $ \leq 904.50$ \\ Imp. $0.12$
+															[Label: 0]
+															[Val($0$) $ \leq 905.50$ \\ Imp. $0.50$
+																[Label: 1]
+																[Label: 0]]]]]]]
+										[Val($0$) $ \leq 942.50$ \\ Imp. $0.03$
+											[Label: 1]
+											[Val($0$) $ \leq 1145.50$ \\ Imp. $0.01$
+												[Val($0$) $ \leq 949.00$ \\ Imp. $0.01$
+													[Label: 0]
+													[Val($0$) $ \leq 1133.00$ \\ Imp. $0.01$
+														[Val($0$) $ \leq 1107.00$ \\ Imp. $0.01$
+															[Val($0$) $ \leq 1025.50$ \\ Imp. $0.02$
+																[Val($0$) $ \leq 981.50$ \\ Imp. $0.04$
+																	[Val($0$) $ \leq 975.50$ \\ Imp. $0.11$
+																		[Val($0$) $ \leq 954.50$ \\ Imp. $0.06$
+																			[Label: 1]
+																			[Val($0$) $ \leq 957.00$ \\ Imp. $0.10$
+																				[Label: 0]
+																				[Label: 1]]]
+																		[Label: 0]]
+																	[Val($0$) $ \leq 990.00$ \\ Imp. $0.03$
+																		[Label: 1]
+																		[Val($0$) $ \leq 995.50$ \\ Imp. $0.08$
+																			[Label: 0]
+																			[Val($0$) $ \leq 1007.00$ \\ Imp. $0.03$
+																				[Label: 0]
+																				[Label: 1]]]]]
+																[Val($0$) $ \leq 1054.00$ \\ Imp. $0.02$
+																	[Label: 0]
+																	[Val($0$) $ \leq 1061.00$ \\ Imp. $0.05$
+																		[Label: 1]
+																		[Val($0$) $ \leq 1104.50$ \\ Imp. $0.03$
+																			[Val($0$) $ \leq 1089.00$ \\ Imp. $0.03$
+																				[Label: 0]
+																				[Label: 1]]
+																			[Label: 0]]]]]
+															[Val($0$) $ \leq 1108.50$ \\ Imp. $0.04$
+																[Label: 1]
+																[Val($0$) $ \leq 1111.50$ \\ Imp. $0.18$
+																	[Label: 0]
+																	[Val($0$) $ \leq 1125.50$ \\ Imp. $0.12$
+																		[Label: 1]
+																		[Val($0$) $ \leq 1129.50$ \\ Imp. $0.50$
+																			[Label: 0]
+																			[Label: 1]]]]]]
+														[Label: 0]]]
+												[Label: 1]]]]
+									[Label: 0]]
+								[Label: 0]]]
+						[Val($4$) $ \leq 1915.50$ \\ Imp. $0.04$
+							[Label: 1]
+							[Val($0$) $ \leq 1208.00$ \\ Imp. $0.02$
+								[Val($0$) $ \leq 1205.50$ \\ Imp. $0.32$
+									[Label: 1]
+									[Label: 0]]
+								[Label: 1]]]]
+					[Val($4$) $ \leq 1991.50$ \\ Imp. $0.01$
+						[Val($0$) $ \leq 1309.50$ \\ Imp. $0.01$
+							[Val($0$) $ \leq 1269.50$ \\ Imp. $0.05$
+								[Val($0$) $ \leq 1257.00$ \\ Imp. $0.06$
+									[Val($0$) $ \leq 1236.50$ \\ Imp. $0.03$
+										[Val($0$) $ \leq 1224.50$ \\ Imp. $0.12$
+											[Label: 0]
+											[Label: 1]]
+										[Label: 0]]
+									[Val($0$) $ \leq 1266.50$ \\ Imp. $0.25$
+										[Label: 1]
+										[Label: 0]]]
+								[Label: 0]]
+							[Val($0$) $ \leq 1317.00$ \\ Imp. $0.01$
+								[Label: 1]
+								[Val($0$) $ \leq 1464.50$ \\ Imp. $0.01$
+									[Val($0$) $ \leq 1453.50$ \\ Imp. $0.05$
+										[Val($0$) $ \leq 1430.50$ \\ Imp. $0.04$
+											[Val($4$) $ \leq 1946.50$ \\ Imp. $0.04$
+												[Val($0$) $ \leq 1384.50$ \\ Imp. $0.05$
+													[Val($0$) $ \leq 1366.50$ \\ Imp. $0.14$
+														[Val($0$) $ \leq 1353.50$ \\ Imp. $0.03$
+															[Val($0$) $ \leq 1352.00$ \\ Imp. $0.11$
+																[Val($0$) $ \leq 1320.00$ \\ Imp. $0.03$
+																	[Label: 0]
+																	[Val($0$) $ \leq 1324.50$ \\ Imp. $0.17$
+																		[Label: 1]
+																		[Val($0$) $ \leq 1331.00$ \\ Imp. $0.06$
+																			[Label: 0]
+																			[Val($0$) $ \leq 1338.50$ \\ Imp. $0.44$
+																				[Label: 1]
+																				[Label: 0]]]]]
+																[Label: 1]]
+															[Label: 0]]
+														[Label: 1]]
+													[Label: 0]]
+												[Val($0$) $ \leq 1380.00$ \\ Imp. $0.20$
+													[Label: 1]
+													[Val($0$) $ \leq 1393.00$ \\ Imp. $0.04$
+														[Label: 0]
+														[Val($0$) $ \leq 1401.50$ \\ Imp. $0.18$
+															[Label: 1]
+															[Val($0$) $ \leq 1416.50$ \\ Imp. $0.12$
+																[Label: 0]
+																[Val($0$) $ \leq 1417.50$ \\ Imp. $0.50$
+																	[Label: 1]
+																	[Label: 0]]]]]]]
+											[Label: 1]]
+										[Label: 0]]
+									[Val($0$) $ \leq 1481.50$ \\ Imp. $0.03$
+										[Label: 1]
+										[Val($0$) $ \leq 1529.50$ \\ Imp. $0.01$
+											[Val($0$) $ \leq 1515.50$ \\ Imp. $0.07$
+												[Val($0$) $ \leq 1491.50$ \\ Imp. $0.08$
+													[Val($0$) $ \leq 1486.50$ \\ Imp. $0.12$
+														[Val($0$) $ \leq 1485.00$ \\ Imp. $0.50$
+															[Label: 0]
+															[Label: 1]]
+														[Label: 0]]
+													[Val($0$) $ \leq 1493.50$ \\ Imp. $0.08$
+														[Label: 1]
+														[Val($0$) $ \leq 1502.00$ \\ Imp. $0.17$
+															[Label: 0]
+															[Val($0$) $ \leq 1513.00$ \\ Imp. $0.11$
+																[Val($0$) $ \leq 1510.00$ \\ Imp. $0.50$
+																	[Label: 1]
+																	[Label: 0]]
+																[Label: 1]]]]]
+												[Label: 0]]
+											[Val($0$) $ \leq 1546.50$ \\ Imp. $0.05$
+												[Label: 1]
+												[Val($0$) $ \leq 1554.00$ \\ Imp. $0.01$
+													[Label: 0]
+													[Val($0$) $ \leq 1570.50$ \\ Imp. $0.05$
+														[Val($0$) $ \leq 1565.50$ \\ Imp. $0.05$
+															[Val($0$) $ \leq 1559.50$ \\ Imp. $0.11$
+																[Label: 1]
+																[Label: 0]]
+															[Label: 1]]
+														[Val($0$) $ \leq 1634.50$ \\ Imp. $0.04$
+															[Val($0$) $ \leq 1581.50$ \\ Imp. $0.03$
+																[Val($0$) $ \leq 1579.00$ \\ Imp. $0.38$
+																	[Label: 0]
+																	[Label: 1]]
+																[Label: 0]]
+															[Val($0$) $ \leq 1646.00$ \\ Imp. $0.09$
+																[Label: 1]
+																[Val($0$) $ \leq 1730.50$ \\ Imp. $0.02$
+																	[Val($0$) $ \leq 1703.50$ \\ Imp. $0.07$
+																		[Val($0$) $ \leq 1690.50$ \\ Imp. $0.08$
+																			[Label: 0]
+																			[Label: 1]]
+																		[Label: 0]]
+																	[Val($0$) $ \leq 1747.50$ \\ Imp. $0.12$
+																		[Val($0$) $ \leq 1742.00$ \\ Imp. $0.12$
+																			[Val($0$) $ \leq 1739.50$ \\ Imp. $0.50$
+																				[Label: 1]
+																				[Label: 0]]
+																			[Label: 1]]
+																		[Label: 0]]]]]]]]]]]]]
+						[Val($0$) $ \leq 1227.00$ \\ Imp. $0.03$
+							[Label: 0]
+							[Val($0$) $ \leq 1469.50$ \\ Imp. $0.03$
+								[Val($0$) $ \leq 1291.50$ \\ Imp. $0.03$
+									[Val($0$) $ \leq 1230.00$ \\ Imp. $0.18$
+										[Label: 1]
+										[Val($0$) $ \leq 1274.50$ \\ Imp. $0.04$
+											[Label: 0]
+											[Val($0$) $ \leq 1276.50$ \\ Imp. $0.11$
+												[Label: 1]
+												[Label: 0]]]]
+									[Val($0$) $ \leq 1323.50$ \\ Imp. $0.05$
+										[Label: 1]
+										[Val($0$) $ \leq 1325.50$ \\ Imp. $0.05$
+											[Label: 0]
+											[Val($0$) $ \leq 1350.50$ \\ Imp. $0.03$
+												[Label: 1]
+												[Val($0$) $ \leq 1374.00$ \\ Imp. $0.06$
+													[Label: 0]
+													[Val($0$) $ \leq 1457.50$ \\ Imp. $0.04$
+														[Val($0$) $ \leq 1423.00$ \\ Imp. $0.08$
+															[Val($0$) $ \leq 1385.50$ \\ Imp. $0.12$
+																[Val($0$) $ \leq 1377.00$ \\ Imp. $0.50$
+																	[Label: 1]
+																	[Label: 0]]
+																[Label: 1]]
+															[Val($0$) $ \leq 1434.50$ \\ Imp. $0.21$
+																[Label: 0]
+																[Val($0$) $ \leq 1455.50$ \\ Imp. $0.44$
+																	[Label: 1]
+																	[Label: 0]]]]
+														[Label: 1]]]]]]]
+								[Val($0$) $ \leq 1527.00$ \\ Imp. $0.06$
+									[Label: 0]
+									[Val($0$) $ \leq 1744.00$ \\ Imp. $0.08$
+										[Val($0$) $ \leq 1603.50$ \\ Imp. $0.05$
+											[Label: 1]
+											[Val($0$) $ \leq 1706.50$ \\ Imp. $0.11$
+												[Val($0$) $ \leq 1640.00$ \\ Imp. $0.04$
+													[Label: 0]
+													[Val($0$) $ \leq 1649.00$ \\ Imp. $0.18$
+														[Label: 1]
+														[Val($0$) $ \leq 1662.50$ \\ Imp. $0.12$
+															[Label: 0]
+															[Label: 1]]]]
+												[Label: 1]]]
+										[Label: 0]]]]]]]
+				[Val($3$) $ \leq 1.50$ \\ Imp. $0.00$
+					[Val($4$) $ \leq 2022.50$ \\ Imp. $0.01$
+						[Val($0$) $ \leq 2448.00$ \\ Imp. $0.01$
+							[Val($0$) $ \leq 2430.50$ \\ Imp. $0.01$
+								[Val($0$) $ \leq 2413.50$ \\ Imp. $0.02$
+									[Val($1$) $ \leq 2.50$ \\ Imp. $0.01$
+										[Val($0$) $ \leq 2220.50$ \\ Imp. $0.02$
+											[Val($0$) $ \leq 2167.50$ \\ Imp. $0.05$
+												[Val($0$) $ \leq 1860.50$ \\ Imp. $0.03$
+													[Val($0$) $ \leq 1759.00$ \\ Imp. $0.10$
+														[Label: 1]
+														[Val($0$) $ \leq 1788.00$ \\ Imp. $0.08$
+															[Label: 0]
+															[Val($0$) $ \leq 1805.00$ \\ Imp. $0.17$
+																[Label: 1]
+																[Val($0$) $ \leq 1815.00$ \\ Imp. $0.11$
+																	[Val($0$) $ \leq 1807.50$ \\ Imp. $0.50$
+																		[Label: 0]
+																		[Label: 1]]
+																	[Label: 0]]]]]
+													[Val($0$) $ \leq 1887.50$ \\ Imp. $0.02$
+														[Label: 1]
+														[Val($0$) $ \leq 1939.50$ \\ Imp. $0.08$
+															[Val($0$) $ \leq 1899.50$ \\ Imp. $0.11$
+																[Val($0$) $ \leq 1895.00$ \\ Imp. $0.50$
+																	[Label: 0]
+																	[Label: 1]]
+																[Label: 0]]
+															[Val($0$) $ \leq 2004.00$ \\ Imp. $0.02$
+																[Label: 1]
+																[Val($0$) $ \leq 2028.50$ \\ Imp. $0.15$
+																	[Label: 0]
+																	[Val($0$) $ \leq 2093.50$ \\ Imp. $0.03$
+																		[Label: 1]
+																		[Val($0$) $ \leq 2102.00$ \\ Imp. $0.38$
+																			[Label: 0]
+																			[Label: 1]]]]]]]]
+												[Val($0$) $ \leq 2186.50$ \\ Imp. $0.22$
+													[Label: 0]
+													[Val($0$) $ \leq 2214.00$ \\ Imp. $0.44$
+														[Label: 1]
+														[Label: 0]]]]
+											[Val($4$) $ \leq 1955.50$ \\ Imp. $0.05$
+												[Val($0$) $ \leq 2265.00$ \\ Imp. $0.11$
+													[Label: 1]
+													[Label: 0]]
+												[Label: 1]]]
+										[Val($0$) $ \leq 2113.00$ \\ Imp. $0.01$
+											[Val($0$) $ \leq 2052.00$ \\ Imp. $0.06$
+												[Val($4$) $ \leq 1944.50$ \\ Imp. $0.05$
+													[Val($0$) $ \leq 1955.50$ \\ Imp. $0.11$
+														[Val($0$) $ \leq 1825.50$ \\ Imp. $0.25$
+															[Label: 0]
+															[Label: 1]]
+														[Label: 0]]
+													[Val($0$) $ \leq 1988.50$ \\ Imp. $0.08$
+														[Val($0$) $ \leq 1889.50$ \\ Imp. $0.22$
+															[Val($0$) $ \leq 1773.50$ \\ Imp. $0.16$
+																[Label: 0]
+																[Val($0$) $ \leq 1888.50$ \\ Imp. $0.10$
+																	[Label: 1]
+																	[Label: 0]]]
+															[Label: 0]]
+														[Label: 1]]]
+												[Label: 1]]
+											[Val($0$) $ \leq 2200.00$ \\ Imp. $0.07$
+												[Val($0$) $ \leq 2135.50$ \\ Imp. $0.04$
+													[Val($0$) $ \leq 2120.50$ \\ Imp. $0.50$
+														[Label: 0]
+														[Label: 1]]
+													[Val($0$) $ \leq 2163.50$ \\ Imp. $0.03$
+														[Label: 0]
+														[Val($0$) $ \leq 2180.50$ \\ Imp. $0.12$
+															[Label: 1]
+															[Label: 0]]]]
+												[Val($0$) $ \leq 2217.50$ \\ Imp. $0.05$
+													[Label: 1]
+													[Val($0$) $ \leq 2407.00$ \\ Imp. $0.04$
+														[Val($0$) $ \leq 2293.00$ \\ Imp. $0.02$
+															[Val($0$) $ \leq 2251.50$ \\ Imp. $0.11$
+																[Label: 0]
+																[Label: 1]]
+															[Val($0$) $ \leq 2297.50$ \\ Imp. $0.05$
+																[Label: 0]
+																[Val($0$) $ \leq 2300.50$ \\ Imp. $0.07$
+																	[Label: 1]
+																	[Val($0$) $ \leq 2331.00$ \\ Imp. $0.01$
+																		[Label: 1]
+																		[Val($0$) $ \leq 2353.50$ \\ Imp. $0.11$
+																			[Label: 0]
+																			[Label: 1]]]]]]
+														[Label: 1]]]]]]
+									[Label: 0]]
+								[Label: 1]]
+							[Val($0$) $ \leq 3230.50$ \\ Imp. $0.00$
+								[Val($4$) $ \leq 2019.50$ \\ Imp. $0.01$
+									[Val($2$) $ \leq 2.50$ \\ Imp. $0.01$
+										[Val($0$) $ \leq 2526.50$ \\ Imp. $0.02$
+											[Val($0$) $ \leq 2496.50$ \\ Imp. $0.20$
+												[Val($0$) $ \leq 2464.00$ \\ Imp. $0.18$
+													[Label: 1]
+													[Val($4$) $ \leq 1911.50$ \\ Imp. $0.32$
+														[Label: 1]
+														[Label: 0]]]
+												[Label: 1]]
+											[Val($0$) $ \leq 2663.50$ \\ Imp. $0.02$
+												[Val($0$) $ \leq 2628.50$ \\ Imp. $0.02$
+													[Label: 0]
+													[Val($0$) $ \leq 2632.00$ \\ Imp. $0.32$
+														[Label: 1]
+														[Label: 0]]]
+												[Val($0$) $ \leq 2691.00$ \\ Imp. $0.02$
+													[Label: 1]
+													[Val($0$) $ \leq 3048.50$ \\ Imp. $0.01$
+														[Val($0$) $ \leq 2995.00$ \\ Imp. $0.11$
+															[Val($0$) $ \leq 2699.00$ \\ Imp. $0.02$
+																[Label: 0]
+																[Val($0$) $ \leq 2745.00$ \\ Imp. $0.05$
+																	[Label: 1]
+																	[Val($0$) $ \leq 2787.50$ \\ Imp. $0.03$
+																		[Label: 0]
+																		[Val($0$) $ \leq 2823.00$ \\ Imp. $0.14$
+																			[Label: 1]
+																			[Label: 0]]]]]
+															[Label: 1]]
+														[Val($0$) $ \leq 3066.50$ \\ Imp. $0.05$
+															[Label: 0]
+															[Val($0$) $ \leq 3186.00$ \\ Imp. $0.11$
+																[Val($4$) $ \leq 1921.50$ \\ Imp. $0.44$
+																	[Label: 0]
+																	[Label: 1]]
+																[Label: 0]]]]]]]
+										[Val($0$) $ \leq 2607.00$ \\ Imp. $0.03$
+											[Val($0$) $ \leq 2577.50$ \\ Imp. $0.04$
+												[Val($0$) $ \leq 2528.50$ \\ Imp. $0.05$
+													[Val($4$) $ \leq 1970.50$ \\ Imp. $0.11$
+														[Label: 0]
+														[Val($0$) $ \leq 2475.50$ \\ Imp. $0.50$
+															[Label: 1]
+															[Label: 0]]]
+													[Val($0$) $ \leq 2534.00$ \\ Imp. $0.12$
+														[Label: 1]
+														[Val($0$) $ \leq 2536.50$ \\ Imp. $0.04$
+															[Label: 0]
+															[Val($0$) $ \leq 2546.50$ \\ Imp. $0.01$
+																[Val($0$) $ \leq 2539.50$ \\ Imp. $0.11$
+																	[Label: 1]
+																	[Label: 0]]
+																[Label: 1]]]]]
+												[Label: 0]]
+											[Val($0$) $ \leq 2716.50$ \\ Imp. $0.07$
+												[Label: 1]
+												[Val($0$) $ \leq 2948.50$ \\ Imp. $0.04$
+													[Val($0$) $ \leq 2859.50$ \\ Imp. $0.14$
+														[Val($0$) $ \leq 2854.00$ \\ Imp. $0.11$
+															[Val($0$) $ \leq 2838.00$ \\ Imp. $0.28$
+																[Val($0$) $ \leq 2774.00$ \\ Imp. $0.12$
+																	[Label: 1]
+																	[Label: 0]]
+																[Label: 1]]
+															[Label: 0]]
+														[Label: 1]]
+													[Val($4$) $ \leq 1974.50$ \\ Imp. $0.09$
+														[Val($0$) $ \leq 3135.50$ \\ Imp. $0.10$
+															[Val($0$) $ \leq 3005.00$ \\ Imp. $0.04$
+																[Label: 0]
+																[Val($0$) $ \leq 3102.50$ \\ Imp. $0.06$
+																	[Val($0$) $ \leq 3094.00$ \\ Imp. $0.21$
+																		[Label: 0]
+																		[Label: 1]]
+																	[Label: 0]]]
+															[Label: 1]]
+														[Label: 0]]]]]]
+									[Label: 0]]
+								[Val($0$) $ \leq 3370.50$ \\ Imp. $0.01$
+									[Val($0$) $ \leq 3284.00$ \\ Imp. $0.03$
+										[Val($0$) $ \leq 3254.00$ \\ Imp. $0.14$
+											[Label: 1]
+											[Val($0$) $ \leq 3268.50$ \\ Imp. $0.15$
+												[Label: 0]
+												[Val($0$) $ \leq 3280.50$ \\ Imp. $0.18$
+													[Label: 1]
+													[Label: 0]]]]
+										[Val($0$) $ \leq 3335.00$ \\ Imp. $0.06$
+											[Label: 1]
+											[Val($0$) $ \leq 3348.50$ \\ Imp. $0.22$
+												[Val($0$) $ \leq 3341.50$ \\ Imp. $0.11$
+													[Val($0$) $ \leq 3338.50$ \\ Imp. $0.50$
+														[Label: 0]
+														[Label: 1]]
+													[Label: 0]]
+												[Label: 1]]]]
+									[Val($4$) $ \leq 2011.50$ \\ Imp. $0.01$
+										[Val($0$) $ \leq 3390.00$ \\ Imp. $0.01$
+											[Label: 0]
+											[Val($0$) $ \leq 3684.50$ \\ Imp. $0.01$
+												[Val($0$) $ \leq 3491.00$ \\ Imp. $0.07$
+													[Val($0$) $ \leq 3473.00$ \\ Imp. $0.09$
+														[Val($0$) $ \leq 3457.00$ \\ Imp. $0.09$
+															[Val($0$) $ \leq 3435.50$ \\ Imp. $0.15$
+																[Val($0$) $ \leq 3413.00$ \\ Imp. $0.08$
+																	[Val($0$) $ \leq 3393.50$ \\ Imp. $0.18$
+																		[Label: 1]
+																		[Label: 0]]
+																	[Label: 1]]
+																[Label: 0]]
+															[Label: 1]]
+														[Label: 0]]
+													[Val($0$) $ \leq 3538.50$ \\ Imp. $0.03$
+														[Label: 1]
+														[Val($0$) $ \leq 3623.00$ \\ Imp. $0.05$
+															[Val($0$) $ \leq 3576.00$ \\ Imp. $0.02$
+																[Label: 0]
+																[Val($0$) $ \leq 3601.50$ \\ Imp. $0.12$
+																	[Label: 1]
+																	[Val($0$) $ \leq 3609.00$ \\ Imp. $0.17$
+																		[Label: 0]
+																		[Label: 1]]]]
+															[Label: 1]]]]
+												[Val($0$) $ \leq 4944.50$ \\ Imp. $0.01$
+													[Val($0$) $ \leq 3890.00$ \\ Imp. $0.01$
+														[Val($0$) $ \leq 3846.50$ \\ Imp. $0.05$
+															[Val($0$) $ \leq 3842.50$ \\ Imp. $0.04$
+																[Val($0$) $ \leq 3771.50$ \\ Imp. $0.05$
+																	[Val($0$) $ \leq 3689.00$ \\ Imp. $0.12$
+																		[Label: 0]
+																		[Val($4$) $ \leq 1989.50$ \\ Imp. $0.26$
+																			[Label: 1]
+																			[Label: 0]]]
+																	[Val($0$) $ \leq 3807.00$ \\ Imp. $0.12$
+																		[Label: 0]
+																		[Val($0$) $ \leq 3812.00$ \\ Imp. $0.17$
+																			[Label: 1]
+																			[Label: 0]]]]
+																[Label: 1]]
+															[Label: 0]]
+														[Val($0$) $ \leq 4024.00$ \\ Imp. $0.02$
+															[Val($0$) $ \leq 3899.00$ \\ Imp. $0.03$
+																[Label: 1]
+																[Val($0$) $ \leq 3973.00$ \\ Imp. $0.06$
+																	[Val($0$) $ \leq 3908.00$ \\ Imp. $0.04$
+																		[Label: 0]
+																		[Val($0$) $ \leq 3916.50$ \\ Imp. $0.04$
+																			[Label: 1]
+																			[Val($0$) $ \leq 3938.00$ \\ Imp. $0.05$
+																				[Label: 0]
+																				[Label: 1]]]]
+																	[Val($0$) $ \leq 4001.00$ \\ Imp. $0.03$
+																		[Val($0$) $ \leq 3995.50$ \\ Imp. $0.38$
+																			[Label: 1]
+																			[Label: 0]]
+																		[Label: 1]]]]
+															[Val($0$) $ \leq 4478.50$ \\ Imp. $0.02$
+																[Val($0$) $ \leq 4366.50$ \\ Imp. $0.02$
+																	[Val($0$) $ \leq 4349.00$ \\ Imp. $0.05$
+																		[Val($0$) $ \leq 4264.50$ \\ Imp. $0.03$
+																			[Val($0$) $ \leq 4261.00$ \\ Imp. $0.06$
+																				[Label: 0]
+																				[Label: 1]]
+																			[Label: 0]]
+																		[Val($0$) $ \leq 4352.00$ \\ Imp. $0.12$
+																			[Label: 1]
+																			[Val($0$) $ \leq 4357.00$ \\ Imp. $0.50$
+																				[Label: 0]
+																				[Label: 1]]]]
+																	[Label: 0]]
+																[Val($0$) $ \leq 4567.50$ \\ Imp. $0.09$
+																	[Val($0$) $ \leq 4528.00$ \\ Imp. $0.03$
+																		[Label: 1]
+																		[Val($0$) $ \leq 4550.50$ \\ Imp. $0.12$
+																			[Val($0$) $ \leq 4543.00$ \\ Imp. $0.17$
+																				[Label: 1]
+																				[Label: 0]]
+																			[Label: 1]]]
+																	[Val($4$) $ \leq 1994.50$ \\ Imp. $0.03$
+																		[Val($0$) $ \leq 4822.50$ \\ Imp. $0.03$
+																			[Label: 0]
+																			[Val($0$) $ \leq 4845.50$ \\ Imp. $0.17$
+																				[Label: 1]
+																				[Label: 0]]]
+																		[Val($0$) $ \leq 4776.50$ \\ Imp. $0.44$
+																			[Label: 1]
+																			[Label: 0]]]]]]]
+													[Val($0$) $ \leq 4993.50$ \\ Imp. $0.21$
+														[Label: 1]
+														[Label: 0]]]]]
+										[Val($0$) $ \leq 3529.50$ \\ Imp. $0.13$
+											[Label: 0]
+											[Val($0$) $ \leq 3766.50$ \\ Imp. $0.03$
+												[Val($0$) $ \leq 3701.50$ \\ Imp. $0.17$
+													[Val($0$) $ \leq 3673.50$ \\ Imp. $0.05$
+														[Label: 1]
+														[Val($4$) $ \leq 2012.50$ \\ Imp. $0.44$
+															[Label: 1]
+															[Label: 0]]]
+													[Val($0$) $ \leq 3723.50$ \\ Imp. $0.12$
+														[Label: 0]
+														[Val($0$) $ \leq 3745.50$ \\ Imp. $0.50$
+															[Label: 1]
+															[Label: 0]]]]
+												[Val($4$) $ \leq 2018.50$ \\ Imp. $0.05$
+													[Label: 1]
+													[Val($0$) $ \leq 4392.00$ \\ Imp. $0.11$
+														[Label: 0]
+														[Label: 1]]]]]]]]]
+						[Label: 1]]
+					[Val($4$) $ \leq 2000.50$ \\ Imp. $0.01$
+						[Val($0$) $ \leq 2829.50$ \\ Imp. $0.00$
+							[Val($0$) $ \leq 2547.50$ \\ Imp. $0.02$
+								[Val($0$) $ \leq 2176.00$ \\ Imp. $0.02$
+									[Val($0$) $ \leq 2044.00$ \\ Imp. $0.05$
+										[Val($0$) $ \leq 1771.00$ \\ Imp. $0.03$
+											[Label: 1]
+											[Val($0$) $ \leq 1774.50$ \\ Imp. $0.03$
+												[Label: 0]
+												[Val($0$) $ \leq 1779.50$ \\ Imp. $0.01$
+													[Label: 1]
+													[Val($0$) $ \leq 1798.00$ \\ Imp. $0.03$
+														[Label: 0]
+														[Val($0$) $ \leq 1809.50$ \\ Imp. $0.03$
+															[Label: 1]
+															[Val($0$) $ \leq 2035.50$ \\ Imp. $0.02$
+																[Val($0$) $ \leq 2023.50$ \\ Imp. $0.04$
+																	[Val($0$) $ \leq 1926.50$ \\ Imp. $0.02$
+																		[Val($0$) $ \leq 1841.50$ \\ Imp. $0.02$
+																			[Label: 1]
+																			[Label: 0]]
+																		[Val($0$) $ \leq 1962.50$ \\ Imp. $0.07$
+																			[Label: 1]
+																			[Val($0$) $ \leq 1968.00$ \\ Imp. $0.18$
+																				[Label: 0]
+																				[Label: 1]]]]
+																	[Label: 0]]
+																[Label: 1]]]]]]]
+										[Val($0$) $ \leq 2139.50$ \\ Imp. $0.03$
+											[Val($0$) $ \leq 2099.00$ \\ Imp. $0.07$
+												[Val($0$) $ \leq 2075.00$ \\ Imp. $0.17$
+													[Label: 0]
+													[Val($0$) $ \leq 2082.50$ \\ Imp. $0.21$
+														[Label: 1]
+														[Val($0$) $ \leq 2096.50$ \\ Imp. $0.44$
+															[Label: 0]
+															[Label: 1]]]]
+												[Label: 0]]
+											[Val($4$) $ \leq 1973.50$ \\ Imp. $0.25$
+												[Val($0$) $ \leq 2157.50$ \\ Imp. $0.12$
+													[Label: 1]
+													[Val($0$) $ \leq 2161.50$ \\ Imp. $0.50$
+														[Label: 0]
+														[Label: 1]]]
+												[Label: 0]]]]
+									[Val($0$) $ \leq 2263.50$ \\ Imp. $0.03$
+										[Val($0$) $ \leq 2188.00$ \\ Imp. $0.05$
+											[Val($0$) $ \leq 2181.50$ \\ Imp. $0.22$
+												[Label: 1]
+												[Label: 0]]
+											[Label: 1]]
+										[Val($0$) $ \leq 2418.50$ \\ Imp. $0.05$
+											[Val($0$) $ \leq 2356.50$ \\ Imp. $0.13$
+												[Val($0$) $ \leq 2288.50$ \\ Imp. $0.18$
+													[Label: 0]
+													[Val($0$) $ \leq 2323.50$ \\ Imp. $0.05$
+														[Label: 1]
+														[Val($0$) $ \leq 2336.00$ \\ Imp. $0.22$
+															[Val($0$) $ \leq 2326.50$ \\ Imp. $0.11$
+																[Label: 0]
+																[Label: 1]]
+															[Label: 1]]]]
+												[Val($0$) $ \leq 2410.50$ \\ Imp. $0.10$
+													[Label: 0]
+													[Val($0$) $ \leq 2415.50$ \\ Imp. $0.50$
+														[Label: 1]
+														[Label: 0]]]]
+											[Val($0$) $ \leq 2478.50$ \\ Imp. $0.09$
+												[Label: 1]
+												[Val($0$) $ \leq 2481.50$ \\ Imp. $0.26$
+													[Label: 0]
+													[Val($0$) $ \leq 2489.50$ \\ Imp. $0.05$
+														[Label: 1]
+														[Val($0$) $ \leq 2540.50$ \\ Imp. $0.44$
+															[Label: 0]
+															[Label: 1]]]]]]]]
+								[Val($0$) $ \leq 2575.50$ \\ Imp. $0.04$
+									[Val($0$) $ \leq 2554.50$ \\ Imp. $0.05$
+										[Val($0$) $ \leq 2550.50$ \\ Imp. $0.44$
+											[Label: 0]
+											[Label: 1]]
+										[Label: 0]]
+									[Val($0$) $ \leq 2763.50$ \\ Imp. $0.06$
+										[Val($0$) $ \leq 2761.50$ \\ Imp. $0.02$
+											[Val($0$) $ \leq 2667.00$ \\ Imp. $0.03$
+												[Val($0$) $ \leq 2640.00$ \\ Imp. $0.10$
+													[Val($0$) $ \leq 2595.50$ \\ Imp. $0.03$
+														[Val($0$) $ \leq 2583.00$ \\ Imp. $0.11$
+															[Label: 0]
+															[Label: 1]]
+														[Val($0$) $ \leq 2629.50$ \\ Imp. $0.21$
+															[Label: 0]
+															[Val($4$) $ \leq 1925.50$ \\ Imp. $0.11$
+																[Val($0$) $ \leq 2635.00$ \\ Imp. $0.50$
+																	[Label: 1]
+																	[Label: 0]]
+																[Label: 1]]]]
+													[Label: 1]]
+												[Val($0$) $ \leq 2684.00$ \\ Imp. $0.09$
+													[Label: 0]
+													[Val($0$) $ \leq 2739.00$ \\ Imp. $0.10$
+														[Val($0$) $ \leq 2713.00$ \\ Imp. $0.08$
+															[Label: 0]
+															[Label: 1]]
+														[Label: 0]]]]
+											[Label: 1]]
+										[Val($0$) $ \leq 2793.50$ \\ Imp. $0.05$
+											[Label: 0]
+											[Val($0$) $ \leq 2798.00$ \\ Imp. $0.44$
+												[Label: 1]
+												[Label: 0]]]]]]
+							[Val($0$) $ \leq 3114.50$ \\ Imp. $0.01$
+								[Val($0$) $ \leq 2974.50$ \\ Imp. $0.02$
+									[Val($0$) $ \leq 2958.00$ \\ Imp. $0.09$
+										[Val($4$) $ \leq 1990.50$ \\ Imp. $0.12$
+											[Val($0$) $ \leq 2885.50$ \\ Imp. $0.01$
+												[Label: 1]
+												[Val($0$) $ \leq 2888.00$ \\ Imp. $0.28$
+													[Label: 0]
+													[Label: 1]]]
+											[Label: 0]]
+										[Label: 0]]
+									[Label: 1]]
+								[Val($0$) $ \leq 3125.50$ \\ Imp. $0.01$
+									[Label: 0]
+									[Val($1$) $ \leq 3.50$ \\ Imp. $0.01$
+										[Val($0$) $ \leq 4175.50$ \\ Imp. $0.01$
+											[Val($0$) $ \leq 3741.50$ \\ Imp. $0.04$
+												[Val($0$) $ \leq 3429.00$ \\ Imp. $0.02$
+													[Val($0$) $ \leq 3180.00$ \\ Imp. $0.04$
+														[Label: 0]
+														[Val($0$) $ \leq 3224.50$ \\ Imp. $0.02$
+															[Label: 1]
+															[Val($0$) $ \leq 3235.50$ \\ Imp. $0.06$
+																[Label: 0]
+																[Val($0$) $ \leq 3258.50$ \\ Imp. $0.03$
+																	[Label: 1]
+																	[Val($0$) $ \leq 3295.00$ \\ Imp. $0.07$
+																		[Label: 0]
+																		[Val($0$) $ \leq 3316.50$ \\ Imp. $0.05$
+																			[Label: 1]
+																			[Val($0$) $ \leq 3320.00$ \\ Imp. $0.18$
+																				[Label: 0]
+																				[Label: 1]]]]]]]]
+													[Val($0$) $ \leq 3512.00$ \\ Imp. $0.04$
+														[Val($0$) $ \leq 3458.50$ \\ Imp. $0.03$
+															[Val($0$) $ \leq 3454.50$ \\ Imp. $0.12$
+																[Label: 0]
+																[Label: 1]]
+															[Label: 0]]
+														[Val($0$) $ \leq 3658.50$ \\ Imp. $0.04$
+															[Val($0$) $ \leq 3639.00$ \\ Imp. $0.09$
+																[Val($4$) $ \leq 1984.50$ \\ Imp. $0.12$
+																	[Val($0$) $ \leq 3587.50$ \\ Imp. $0.11$
+																		[Val($0$) $ \leq 3533.50$ \\ Imp. $0.04$
+																			[Val($0$) $ \leq 3530.50$ \\ Imp. $0.50$
+																				[Label: 1]
+																				[Label: 0]]
+																			[Label: 1]]
+																		[Label: 0]]
+																	[Label: 0]]
+																[Label: 1]]
+															[Label: 0]]]]
+												[Val($0$) $ \leq 4063.00$ \\ Imp. $0.03$
+													[Val($0$) $ \leq 4061.50$ \\ Imp. $0.06$
+														[Val($0$) $ \leq 3783.50$ \\ Imp. $0.02$
+															[Label: 1]
+															[Val($0$) $ \leq 3801.50$ \\ Imp. $0.08$
+																[Label: 0]
+																[Val($0$) $ \leq 4047.50$ \\ Imp. $0.03$
+																	[Val($0$) $ \leq 4032.00$ \\ Imp. $0.11$
+																		[Label: 1]
+																		[Label: 0]]
+																	[Label: 1]]]]
+														[Label: 0]]
+													[Label: 1]]]
+											[Val($4$) $ \leq 1986.50$ \\ Imp. $0.04$
+												[Val($0$) $ \leq 4198.50$ \\ Imp. $0.04$
+													[Label: 0]
+													[Val($0$) $ \leq 4464.00$ \\ Imp. $0.02$
+														[Val($0$) $ \leq 4375.00$ \\ Imp. $0.06$
+															[Val($0$) $ \leq 4361.50$ \\ Imp. $0.05$
+																[Val($0$) $ \leq 4344.00$ \\ Imp. $0.09$
+																	[Val($0$) $ \leq 4331.50$ \\ Imp. $0.05$
+																		[Val($0$) $ \leq 4235.50$ \\ Imp. $0.03$
+																			[Val($0$) $ \leq 4223.50$ \\ Imp. $0.08$
+																				[Label: 0]
+																				[Label: 1]]
+																			[Val($0$) $ \leq 4258.00$ \\ Imp. $0.11$
+																				[Label: 0]
+																				[Label: 1]]]
+																		[Label: 1]]
+																	[Label: 0]]
+																[Label: 1]]
+															[Label: 0]]
+														[Val($0$) $ \leq 4524.50$ \\ Imp. $0.03$
+															[Label: 1]
+															[Val($0$) $ \leq 4534.50$ \\ Imp. $0.03$
+																[Label: 0]
+																[Val($0$) $ \leq 4566.00$ \\ Imp. $0.01$
+																	[Label: 1]
+																	[Val($0$) $ \leq 4571.50$ \\ Imp. $0.03$
+																		[Label: 0]
+																		[Val($0$) $ \leq 4618.50$ \\ Imp. $0.03$
+																			[Label: 1]
+																			[Val($0$) $ \leq 4860.50$ \\ Imp. $0.03$
+																				[Label: 0]
+																				[Label: 1]]]]]]]]]
+												[Label: 0]]]
+										[Val($4$) $ \leq 1995.50$ \\ Imp. $0.01$
+											[Val($0$) $ \leq 4969.50$ \\ Imp. $0.01$
+												[Val($0$) $ \leq 4897.50$ \\ Imp. $0.01$
+													[Val($0$) $ \leq 4779.50$ \\ Imp. $0.01$
+														[Val($0$) $ \leq 4668.50$ \\ Imp. $0.01$
+															[Val($0$) $ \leq 4601.50$ \\ Imp. $0.02$
+																[Val($0$) $ \leq 4399.50$ \\ Imp. $0.02$
+																	[Val($4$) $ \leq 1992.50$ \\ Imp. $0.01$
+																		[Val($0$) $ \leq 4245.00$ \\ Imp. $0.01$
+																			[Val($0$) $ \leq 4076.50$ \\ Imp. $0.02$
+																				[Label: 1]
+																				[Label: 0]]
+																			[Label: 1]]
+																		[Label: 0]]
+																	[Val($0$) $ \leq 4419.50$ \\ Imp. $0.06$
+																		[Label: 0]
+																		[Val($0$) $ \leq 4536.50$ \\ Imp. $0.11$
+																			[Label: 1]
+																			[Label: 0]]]]
+																[Label: 1]]
+															[Val($0$) $ \leq 4721.00$ \\ Imp. $0.08$
+																[Label: 0]
+																[Val($0$) $ \leq 4736.00$ \\ Imp. $0.03$
+																	[Label: 1]
+																	[Label: 0]]]]
+														[Label: 1]]
+													[Label: 0]]
+												[Label: 1]]
+											[Label: 1]]]]]]
+						[Val($0$) $ \leq 3158.50$ \\ Imp. $0.02$
+							[Val($0$) $ \leq 3059.00$ \\ Imp. $0.02$
+								[Val($0$) $ \leq 2024.50$ \\ Imp. $0.02$
+									[Val($0$) $ \leq 1958.50$ \\ Imp. $0.04$
+										[Val($0$) $ \leq 1913.50$ \\ Imp. $0.18$
+											[Label: 1]
+											[Label: 0]]
+										[Label: 1]]
+									[Val($0$) $ \leq 2072.00$ \\ Imp. $0.04$
+										[Label: 0]
+										[Val($0$) $ \leq 2134.00$ \\ Imp. $0.03$
+											[Label: 1]
+											[Val($0$) $ \leq 2183.50$ \\ Imp. $0.02$
+												[Label: 0]
+												[Val($0$) $ \leq 3034.50$ \\ Imp. $0.02$
+													[Val($0$) $ \leq 2970.50$ \\ Imp. $0.03$
+														[Val($0$) $ \leq 2920.00$ \\ Imp. $0.02$
+															[Val($0$) $ \leq 2767.50$ \\ Imp. $0.04$
+																[Val($0$) $ \leq 2605.50$ \\ Imp. $0.05$
+																	[Val($0$) $ \leq 2515.00$ \\ Imp. $0.13$
+																		[Val($0$) $ \leq 2346.50$ \\ Imp. $0.15$
+																			[Label: 1]
+																			[Label: 0]]
+																		[Label: 1]]
+																	[Val($0$) $ \leq 2657.00$ \\ Imp. $0.12$
+																		[Label: 0]
+																		[Val($0$) $ \leq 2677.50$ \\ Imp. $0.17$
+																			[Label: 1]
+																			[Val($0$) $ \leq 2754.00$ \\ Imp. $0.11$
+																				[Label: 1]
+																				[Label: 0]]]]]
+																[Label: 1]]
+															[Label: 0]]
+														[Label: 1]]
+													[Label: 0]]]]]]
+								[Label: 1]]
+							[Val($4$) $ \leq 2013.50$ \\ Imp. $0.04$
+								[Val($0$) $ \leq 3610.50$ \\ Imp. $0.03$
+									[Label: 0]
+									[Val($0$) $ \leq 3735.00$ \\ Imp. $0.15$
+										[Label: 1]
+										[Val($0$) $ \leq 4252.00$ \\ Imp. $0.02$
+											[Label: 0]
+											[Val($0$) $ \leq 4421.50$ \\ Imp. $0.02$
+												[Val($0$) $ \leq 4364.00$ \\ Imp. $0.01$
+													[Label: 1]
+													[Label: 0]]
+												[Val($0$) $ \leq 4648.00$ \\ Imp. $0.04$
+													[Label: 0]
+													[Val($0$) $ \leq 4863.50$ \\ Imp. $0.07$
+														[Val($0$) $ \leq 4847.50$ \\ Imp. $0.18$
+															[Label: 0]
+															[Label: 1]]
+														[Label: 0]]]]]]]
+								[Val($0$) $ \leq 4698.00$ \\ Imp. $0.06$
+									[Val($0$) $ \leq 4499.50$ \\ Imp. $0.07$
+										[Val($0$) $ \leq 3470.00$ \\ Imp. $0.07$
+											[Val($0$) $ \leq 3357.50$ \\ Imp. $0.05$
+												[Label: 0]
+												[Val($0$) $ \leq 3430.50$ \\ Imp. $0.11$
+													[Label: 1]
+													[Label: 0]]]
+											[Val($0$) $ \leq 3722.50$ \\ Imp. $0.05$
+												[Label: 1]
+												[Val($0$) $ \leq 3729.50$ \\ Imp. $0.06$
+													[Label: 0]
+													[Val($0$) $ \leq 4114.50$ \\ Imp. $0.06$
+														[Val($0$) $ \leq 3919.50$ \\ Imp. $0.07$
+															[Val($0$) $ \leq 3882.50$ \\ Imp. $0.18$
+																[Label: 1]
+																[Label: 0]]
+															[Label: 1]]
+														[Val($0$) $ \leq 4210.50$ \\ Imp. $0.44$
+															[Label: 0]
+															[Label: 1]]]]]]
+										[Label: 0]]
+									[Val($0$) $ \leq 4904.50$ \\ Imp. $0.11$
+										[Label: 1]
+										[Val($0$) $ \leq 4925.50$ \\ Imp. $0.50$
+											[Label: 0]
+											[Label: 1]]]]]]]]]]]
+	[Val($0$) $ \leq 3166.00$ \\ Imp. $0.00$
+		[Val($0$) $ \leq 3151.00$ \\ Imp. $0.01$
+			[Val($0$) $ \leq 615.00$ \\ Imp. $0.00$
+				[Val($4$) $ \leq 1918.50$ \\ Imp. $0.04$
+					[Label: 1]
+					[Val($0$) $ \leq 527.50$ \\ Imp. $0.05$
+						[Val($0$) $ \leq 503.50$ \\ Imp. $0.17$
+							[Label: 1]
+							[Val($0$) $ \leq 514.50$ \\ Imp. $0.11$
+								[Val($0$) $ \leq 512.00$ \\ Imp. $0.50$
+									[Label: 0]
+									[Label: 1]]
+								[Label: 0]]]
+						[Label: 1]]]
+				[Val($4$) $ \leq 2006.50$ \\ Imp. $0.00$
+					[Val($0$) $ \leq 3138.00$ \\ Imp. $0.00$
+						[Val($0$) $ \leq 1793.50$ \\ Imp. $0.00$
+							[Val($0$) $ \leq 1783.50$ \\ Imp. $0.01$
+								[Val($0$) $ \leq 1775.50$ \\ Imp. $0.01$
+									[Val($0$) $ \leq 1746.00$ \\ Imp. $0.01$
+										[Val($0$) $ \leq 618.00$ \\ Imp. $0.00$
+											[Label: 0]
+											[Val($0$) $ \leq 1683.00$ \\ Imp. $0.00$
+												[Val($0$) $ \leq 1628.00$ \\ Imp. $0.01$
+													[Val($0$) $ \leq 1623.50$ \\ Imp. $0.01$
+														[Val($0$) $ \leq 1415.00$ \\ Imp. $0.00$
+															[Val($0$) $ \leq 1239.00$ \\ Imp. $0.02$
+																[Val($0$) $ \leq 1070.00$ \\ Imp. $0.01$
+																	[Val($0$) $ \leq 1011.00$ \\ Imp. $0.03$
+																		[Val($4$) $ \leq 1951.50$ \\ Imp. $0.02$
+																			[Label: 1]
+																			[Val($0$) $ \leq 903.50$ \\ Imp. $0.05$
+																				[Label: 0]
+																				[Label: 1]]]
+																		[Val($0$) $ \leq 1032.50$ \\ Imp. $0.12$
+																			[Label: 0]
+																			[Val($0$) $ \leq 1038.00$ \\ Imp. $0.50$
+																				[Label: 1]
+																				[Label: 0]]]]
+																	[Val($0$) $ \leq 1128.50$ \\ Imp. $0.04$
+																		[Label: 1]
+																		[Val($0$) $ \leq 1141.50$ \\ Imp. $0.08$
+																			[Val($0$) $ \leq 1134.50$ \\ Imp. $0.12$
+																				[Label: 1]
+																				[Label: 0]]
+																			[Label: 1]]]]
+																[Val($0$) $ \leq 1314.50$ \\ Imp. $0.11$
+																	[Val($0$) $ \leq 1286.00$ \\ Imp. $0.03$
+																		[Label: 0]
+																		[Val($0$) $ \leq 1294.00$ \\ Imp. $0.38$
+																			[Label: 1]
+																			[Label: 0]]]
+																	[Val($0$) $ \leq 1404.00$ \\ Imp. $0.08$
+																		[Val($0$) $ \leq 1347.50$ \\ Imp. $0.06$
+																			[Label: 1]
+																			[Val($0$) $ \leq 1361.50$ \\ Imp. $0.11$
+																				[Label: 0]
+																				[Label: 1]]]
+																		[Label: 0]]]]
+															[Val($0$) $ \leq 1448.00$ \\ Imp. $0.06$
+																[Label: 1]
+																[Val($0$) $ \leq 1472.50$ \\ Imp. $0.07$
+																	[Val($0$) $ \leq 1452.00$ \\ Imp. $0.12$
+																		[Val($0$) $ \leq 1450.50$ \\ Imp. $0.50$
+																			[Label: 0]
+																			[Label: 1]]
+																		[Label: 0]]
+																	[Val($0$) $ \leq 1507.50$ \\ Imp. $0.04$
+																		[Label: 1]
+																		[Val($0$) $ \leq 1621.00$ \\ Imp. $0.03$
+																			[Val($0$) $ \leq 1533.00$ \\ Imp. $0.03$
+																				[Label: 1]
+																				[Label: 0]]
+																			[Label: 1]]]]]]
+														[Label: 0]]
+													[Label: 1]]
+												[Val($0$) $ \leq 1740.50$ \\ Imp. $0.05$
+													[Val($0$) $ \leq 1717.50$ \\ Imp. $0.11$
+														[Val($0$) $ \leq 1687.00$ \\ Imp. $0.17$
+															[Label: 0]
+															[Val($0$) $ \leq 1700.00$ \\ Imp. $0.11$
+																[Val($0$) $ \leq 1694.50$ \\ Imp. $0.50$
+																	[Label: 1]
+																	[Label: 0]]
+																[Label: 1]]]
+														[Label: 0]]
+													[Label: 1]]]]
+										[Label: 1]]
+									[Label: 0]]
+								[Label: 1]]
+							[Val($2$) $ \leq 3.50$ \\ Imp. $0.01$
+								[Val($4$) $ \leq 1997.50$ \\ Imp. $0.02$
+									[Val($0$) $ \leq 1847.50$ \\ Imp. $0.01$
+										[Val($0$) $ \leq 1832.50$ \\ Imp. $0.11$
+											[Val($0$) $ \leq 1811.50$ \\ Imp. $0.17$
+												[Label: 0]
+												[Val($0$) $ \leq 1830.00$ \\ Imp. $0.11$
+													[Val($0$) $ \leq 1828.00$ \\ Imp. $0.50$
+														[Label: 1]
+														[Label: 0]]
+													[Label: 1]]]
+											[Label: 0]]
+										[Val($0$) $ \leq 2145.50$ \\ Imp. $0.01$
+											[Val($0$) $ \leq 1874.50$ \\ Imp. $0.02$
+												[Label: 1]
+												[Val($0$) $ \leq 1972.50$ \\ Imp. $0.04$
+													[Val($0$) $ \leq 1964.50$ \\ Imp. $0.18$
+														[Val($0$) $ \leq 1943.50$ \\ Imp. $0.12$
+															[Label: 0]
+															[Label: 1]]
+														[Label: 0]]
+													[Val($0$) $ \leq 2048.00$ \\ Imp. $0.03$
+														[Label: 1]
+														[Val($0$) $ \leq 2070.50$ \\ Imp. $0.38$
+															[Label: 0]
+															[Label: 1]]]]]
+											[Val($0$) $ \leq 2307.50$ \\ Imp. $0.01$
+												[Val($0$) $ \leq 2238.50$ \\ Imp. $0.13$
+													[Val($0$) $ \leq 2212.50$ \\ Imp. $0.22$
+														[Val($0$) $ \leq 2192.50$ \\ Imp. $0.11$
+															[Val($0$) $ \leq 2173.50$ \\ Imp. $0.50$
+																[Label: 0]
+																[Label: 1]]
+															[Label: 0]]
+														[Label: 1]]
+													[Val($0$) $ \leq 2298.50$ \\ Imp. $0.06$
+														[Val($0$) $ \leq 2261.50$ \\ Imp. $0.44$
+															[Label: 0]
+															[Label: 1]]
+														[Label: 0]]]
+												[Val($0$) $ \leq 2391.00$ \\ Imp. $0.02$
+													[Label: 1]
+													[Val($0$) $ \leq 2468.50$ \\ Imp. $0.03$
+														[Val($0$) $ \leq 2428.50$ \\ Imp. $0.06$
+															[Label: 0]
+															[Val($0$) $ \leq 2459.50$ \\ Imp. $0.11$
+																[Label: 1]
+																[Label: 0]]]
+														[Val($4$) $ \leq 1952.50$ \\ Imp. $0.02$
+															[Val($0$) $ \leq 2548.50$ \\ Imp. $0.03$
+																[Val($0$) $ \leq 2499.00$ \\ Imp. $0.32$
+																	[Label: 1]
+																	[Label: 0]]
+																[Val($0$) $ \leq 2689.00$ \\ Imp. $0.05$
+																	[Label: 1]
+																	[Val($0$) $ \leq 3019.00$ \\ Imp. $0.02$
+																		[Val($0$) $ \leq 2989.50$ \\ Imp. $0.11$
+																			[Val($0$) $ \leq 2931.50$ \\ Imp. $0.05$
+																				[Label: 1]
+																				[Label: 0]]
+																			[Label: 1]]
+																		[Val($0$) $ \leq 3081.50$ \\ Imp. $0.22$
+																			[Label: 0]
+																			[Val($0$) $ \leq 3091.50$ \\ Imp. $0.11$
+																				[Label: 1]
+																				[Label: 0]]]]]]
+															[Val($0$) $ \leq 3100.00$ \\ Imp. $0.04$
+																[Val($0$) $ \leq 2846.00$ \\ Imp. $0.03$
+																	[Val($0$) $ \leq 2563.00$ \\ Imp. $0.22$
+																		[Label: 1]
+																		[Val($0$) $ \leq 2703.50$ \\ Imp. $0.11$
+																			[Val($0$) $ \leq 2572.50$ \\ Imp. $0.50$
+																				[Label: 0]
+																				[Label: 1]]
+																			[Label: 0]]]
+																	[Val($0$) $ \leq 2954.50$ \\ Imp. $0.04$
+																		[Label: 1]
+																		[Val($0$) $ \leq 2963.50$ \\ Imp. $0.17$
+																			[Label: 0]
+																			[Label: 1]]]]
+																[Label: 0]]]]]]]]
+									[Val($0$) $ \leq 2750.00$ \\ Imp. $0.07$
+										[Val($0$) $ \leq 1856.50$ \\ Imp. $0.09$
+											[Val($0$) $ \leq 1806.50$ \\ Imp. $0.50$
+												[Label: 0]
+												[Label: 1]]
+											[Label: 0]]
+										[Val($4$) $ \leq 2004.50$ \\ Imp. $0.10$
+											[Val($0$) $ \leq 2926.00$ \\ Imp. $0.08$
+												[Label: 0]
+												[Val($0$) $ \leq 2946.00$ \\ Imp. $0.17$
+													[Label: 1]
+													[Label: 0]]]
+											[Label: 1]]]]
+								[Val($0$) $ \leq 3045.50$ \\ Imp. $0.05$
+									[Val($0$) $ \leq 2833.00$ \\ Imp. $0.05$
+										[Val($0$) $ \leq 2608.50$ \\ Imp. $0.07$
+											[Val($4$) $ \leq 1958.50$ \\ Imp. $0.02$
+												[Val($0$) $ \leq 1941.50$ \\ Imp. $0.04$
+													[Val($0$) $ \leq 1883.00$ \\ Imp. $0.17$
+														[Val($0$) $ \leq 1881.00$ \\ Imp. $0.11$
+															[Label: 1]
+															[Label: 0]]
+														[Label: 1]]
+													[Val($0$) $ \leq 2069.00$ \\ Imp. $0.04$
+														[Label: 0]
+														[Val($0$) $ \leq 2445.50$ \\ Imp. $0.03$
+															[Val($0$) $ \leq 2317.50$ \\ Imp. $0.03$
+																[Label: 0]
+																[Label: 1]]
+															[Label: 0]]]]
+												[Val($0$) $ \leq 2067.50$ \\ Imp. $0.10$
+													[Label: 1]
+													[Val($0$) $ \leq 2549.50$ \\ Imp. $0.08$
+														[Val($0$) $ \leq 2325.00$ \\ Imp. $0.17$
+															[Label: 0]
+															[Label: 1]]
+														[Label: 0]]]]
+											[Val($0$) $ \leq 2708.50$ \\ Imp. $0.05$
+												[Val($0$) $ \leq 2649.00$ \\ Imp. $0.11$
+													[Label: 1]
+													[Label: 0]]
+												[Label: 1]]]
+										[Label: 0]]
+									[Label: 1]]]]
+						[Label: 1]]
+					[Val($0$) $ \leq 2862.50$ \\ Imp. $0.04$
+						[Val($0$) $ \leq 1253.50$ \\ Imp. $0.03$
+							[Val($0$) $ \leq 1003.00$ \\ Imp. $0.06$
+								[Val($0$) $ \leq 961.00$ \\ Imp. $0.18$
+									[Val($0$) $ \leq 784.50$ \\ Imp. $0.08$
+										[Val($0$) $ \leq 778.50$ \\ Imp. $0.18$
+											[Label: 0]
+											[Label: 1]]
+										[Label: 0]]
+									[Label: 1]]
+								[Label: 0]]
+							[Val($0$) $ \leq 1940.50$ \\ Imp. $0.05$
+								[Val($0$) $ \leq 1766.50$ \\ Imp. $0.06$
+									[Val($0$) $ \leq 1735.50$ \\ Imp. $0.44$
+										[Label: 1]
+										[Label: 0]]
+									[Label: 1]]
+								[Val($0$) $ \leq 2366.50$ \\ Imp. $0.07$
+									[Val($0$) $ \leq 2224.50$ \\ Imp. $0.08$
+										[Val($0$) $ \leq 2138.50$ \\ Imp. $0.18$
+											[Val($0$) $ \leq 1997.50$ \\ Imp. $0.04$
+												[Label: 0]
+												[Val($0$) $ \leq 2104.50$ \\ Imp. $0.11$
+													[Label: 1]
+													[Label: 0]]]
+											[Label: 1]]
+										[Label: 0]]
+									[Val($0$) $ \leq 2735.50$ \\ Imp. $0.03$
+										[Val($0$) $ \leq 2701.50$ \\ Imp. $0.08$
+											[Val($0$) $ \leq 2574.50$ \\ Imp. $0.06$
+												[Val($0$) $ \leq 2567.50$ \\ Imp. $0.11$
+													[Val($0$) $ \leq 2504.50$ \\ Imp. $0.04$
+														[Val($0$) $ \leq 2491.50$ \\ Imp. $0.01$
+															[Label: 0]
+															[Label: 1]]
+														[Label: 1]]
+													[Label: 0]]
+												[Label: 1]]
+											[Label: 0]]
+										[Label: 1]]]]]
+						[Label: 0]]]]
+			[Label: 0]]
+		[Val($0$) $ \leq 4692.00$ \\ Imp. $0.01$
+			[Val($0$) $ \leq 3464.50$ \\ Imp. $0.01$
+				[Val($0$) $ \leq 3421.50$ \\ Imp. $0.02$
+					[Val($0$) $ \leq 3416.50$ \\ Imp. $0.03$
+						[Val($4$) $ \leq 1965.50$ \\ Imp. $0.01$
+							[Val($0$) $ \leq 3194.00$ \\ Imp. $0.04$
+								[Label: 1]
+								[Val($0$) $ \leq 3212.50$ \\ Imp. $0.08$
+									[Label: 0]
+									[Val($0$) $ \leq 3239.50$ \\ Imp. $0.05$
+										[Label: 1]
+										[Val($0$) $ \leq 3244.50$ \\ Imp. $0.05$
+											[Label: 0]
+											[Val($0$) $ \leq 3291.50$ \\ Imp. $0.02$
+												[Val($0$) $ \leq 3273.50$ \\ Imp. $0.17$
+													[Label: 1]
+													[Label: 0]]
+												[Val($0$) $ \leq 3364.50$ \\ Imp. $0.02$
+													[Label: 1]
+													[Val($0$) $ \leq 3376.50$ \\ Imp. $0.50$
+														[Label: 0]
+														[Label: 1]]]]]]]]
+							[Val($0$) $ \leq 3238.50$ \\ Imp. $0.15$
+								[Val($0$) $ \leq 3234.50$ \\ Imp. $0.11$
+									[Val($0$) $ \leq 3181.50$ \\ Imp. $0.50$
+										[Label: 0]
+										[Label: 1]]
+									[Label: 0]]
+								[Label: 1]]]
+						[Label: 0]]
+					[Label: 1]]
+				[Val($0$) $ \leq 3867.50$ \\ Imp. $0.01$
+					[Val($0$) $ \leq 3843.50$ \\ Imp. $0.02$
+						[Val($0$) $ \leq 3829.50$ \\ Imp. $0.02$
+							[Val($0$) $ \leq 3779.00$ \\ Imp. $0.04$
+								[Val($0$) $ \leq 3521.00$ \\ Imp. $0.02$
+									[Val($0$) $ \leq 3468.00$ \\ Imp. $0.04$
+										[Label: 0]
+										[Val($0$) $ \leq 3475.50$ \\ Imp. $0.11$
+											[Label: 1]
+											[Val($0$) $ \leq 3486.00$ \\ Imp. $0.04$
+												[Label: 0]
+												[Val($0$) $ \leq 3501.50$ \\ Imp. $0.18$
+													[Label: 1]
+													[Val($0$) $ \leq 3504.50$ \\ Imp. $0.04$
+														[Label: 0]
+														[Val($0$) $ \leq 3519.50$ \\ Imp. $0.11$
+															[Label: 1]
+															[Label: 0]]]]]]]
+									[Val($0$) $ \leq 3559.50$ \\ Imp. $0.02$
+										[Label: 1]
+										[Val($0$) $ \leq 3560.50$ \\ Imp. $0.02$
+											[Label: 0]
+											[Val($4$) $ \leq 1929.50$ \\ Imp. $0.02$
+												[Val($0$) $ \leq 3590.00$ \\ Imp. $0.06$
+													[Label: 0]
+													[Val($0$) $ \leq 3726.50$ \\ Imp. $0.10$
+														[Val($0$) $ \leq 3630.00$ \\ Imp. $0.01$
+															[Label: 0]
+															[Label: 1]]
+														[Label: 0]]]
+												[Val($0$) $ \leq 3733.50$ \\ Imp. $0.03$
+													[Val($0$) $ \leq 3674.50$ \\ Imp. $0.03$
+														[Val($0$) $ \leq 3568.50$ \\ Imp. $0.02$
+															[Label: 1]
+															[Val($0$) $ \leq 3592.50$ \\ Imp. $0.06$
+																[Label: 0]
+																[Val($0$) $ \leq 3598.00$ \\ Imp. $0.03$
+																	[Label: 1]
+																	[Val($0$) $ \leq 3606.00$ \\ Imp. $0.07$
+																		[Label: 0]
+																		[Val($0$) $ \leq 3617.50$ \\ Imp. $0.05$
+																			[Label: 1]
+																			[Val($0$) $ \leq 3637.00$ \\ Imp. $0.18$
+																				[Label: 0]
+																				[Label: 1]]]]]]]
+														[Val($0$) $ \leq 3676.00$ \\ Imp. $0.06$
+															[Label: 0]
+															[Val($0$) $ \leq 3696.50$ \\ Imp. $0.06$
+																[Val($0$) $ \leq 3679.50$ \\ Imp. $0.11$
+																	[Label: 0]
+																	[Label: 1]]
+																[Label: 0]]]]
+													[Label: 1]]]]]]
+								[Val($0$) $ \leq 3800.50$ \\ Imp. $0.11$
+									[Label: 0]
+									[Val($0$) $ \leq 3826.00$ \\ Imp. $0.50$
+										[Label: 1]
+										[Label: 0]]]]
+							[Label: 1]]
+						[Val($0$) $ \leq 3857.50$ \\ Imp. $0.12$
+							[Label: 0]
+							[Val($0$) $ \leq 3865.50$ \\ Imp. $0.50$
+								[Label: 1]
+								[Label: 0]]]]
+					[Val($0$) $ \leq 4229.50$ \\ Imp. $0.01$
+						[Val($0$) $ \leq 4109.50$ \\ Imp. $0.03$
+							[Val($0$) $ \leq 4081.50$ \\ Imp. $0.03$
+								[Val($0$) $ \leq 3944.50$ \\ Imp. $0.02$
+									[Val($0$) $ \leq 3915.50$ \\ Imp. $0.02$
+										[Val($0$) $ \leq 3878.00$ \\ Imp. $0.32$
+											[Label: 1]
+											[Label: 0]]
+										[Label: 1]]
+									[Val($0$) $ \leq 3954.50$ \\ Imp. $0.09$
+										[Label: 0]
+										[Val($4$) $ \leq 1927.50$ \\ Imp. $0.04$
+											[Label: 1]
+											[Val($0$) $ \leq 3999.00$ \\ Imp. $0.04$
+												[Val($0$) $ \leq 3963.50$ \\ Imp. $0.05$
+													[Val($0$) $ \leq 3961.50$ \\ Imp. $0.44$
+														[Label: 1]
+														[Label: 0]]
+													[Label: 1]]
+												[Val($0$) $ \leq 4067.00$ \\ Imp. $0.11$
+													[Val($0$) $ \leq 4013.00$ \\ Imp. $0.15$
+														[Val($4$) $ \leq 1960.50$ \\ Imp. $0.21$
+															[Val($0$) $ \leq 4006.50$ \\ Imp. $0.11$
+																[Val($0$) $ \leq 4004.50$ \\ Imp. $0.50$
+																	[Label: 0]
+																	[Label: 1]]
+																[Label: 0]]
+															[Label: 1]]
+														[Label: 0]]
+													[Label: 1]]]]]]
+								[Val($0$) $ \leq 4094.50$ \\ Imp. $0.21$
+									[Label: 0]
+									[Val($0$) $ \leq 4102.50$ \\ Imp. $0.44$
+										[Label: 1]
+										[Label: 0]]]]
+							[Label: 1]]
+						[Val($0$) $ \leq 4427.00$ \\ Imp. $0.05$
+							[Val($4$) $ \leq 2017.50$ \\ Imp. $0.03$
+								[Val($4$) $ \leq 1939.50$ \\ Imp. $0.05$
+									[Val($0$) $ \leq 4316.00$ \\ Imp. $0.03$
+										[Val($0$) $ \leq 4289.50$ \\ Imp. $0.06$
+											[Val($0$) $ \leq 4243.50$ \\ Imp. $0.11$
+												[Label: 0]
+												[Label: 1]]
+											[Label: 0]]
+										[Val($0$) $ \leq 4325.50$ \\ Imp. $0.18$
+											[Label: 1]
+											[Val($0$) $ \leq 4386.00$ \\ Imp. $0.12$
+												[Label: 0]
+												[Val($0$) $ \leq 4401.00$ \\ Imp. $0.50$
+													[Label: 1]
+													[Label: 0]]]]]
+									[Val($0$) $ \leq 4423.50$ \\ Imp. $0.06$
+										[Val($0$) $ \leq 4276.50$ \\ Imp. $0.09$
+											[Val($0$) $ \leq 4270.50$ \\ Imp. $0.21$
+												[Val($0$) $ \leq 4267.50$ \\ Imp. $0.11$
+													[Val($0$) $ \leq 4239.50$ \\ Imp. $0.50$
+														[Label: 1]
+														[Label: 0]]
+													[Label: 1]]
+												[Label: 0]]
+											[Val($0$) $ \leq 4341.50$ \\ Imp. $0.11$
+												[Label: 1]
+												[Val($0$) $ \leq 4353.50$ \\ Imp. $0.50$
+													[Label: 0]
+													[Label: 1]]]]
+										[Label: 0]]]
+								[Label: 0]]
+							[Val($0$) $ \leq 4677.50$ \\ Imp. $0.02$
+								[Val($0$) $ \leq 4673.00$ \\ Imp. $0.02$
+									[Val($0$) $ \leq 4452.50$ \\ Imp. $0.02$
+										[Label: 1]
+										[Val($0$) $ \leq 4470.50$ \\ Imp. $0.04$
+											[Val($0$) $ \leq 4462.50$ \\ Imp. $0.12$
+												[Val($0$) $ \leq 4455.00$ \\ Imp. $0.50$
+													[Label: 0]
+													[Label: 1]]
+												[Label: 0]]
+											[Val($0$) $ \leq 4531.00$ \\ Imp. $0.02$
+												[Val($0$) $ \leq 4484.50$ \\ Imp. $0.07$
+													[Val($0$) $ \leq 4475.00$ \\ Imp. $0.21$
+														[Label: 1]
+														[Label: 0]]
+													[Label: 1]]
+												[Val($0$) $ \leq 4589.50$ \\ Imp. $0.07$
+													[Val($0$) $ \leq 4554.50$ \\ Imp. $0.22$
+														[Val($0$) $ \leq 4544.50$ \\ Imp. $0.11$
+															[Label: 0]
+															[Label: 1]]
+														[Label: 0]]
+													[Val($0$) $ \leq 4632.50$ \\ Imp. $0.02$
+														[Label: 1]
+														[Val($0$) $ \leq 4634.50$ \\ Imp. $0.11$
+															[Label: 0]
+															[Val($0$) $ \leq 4640.00$ \\ Imp. $0.04$
+																[Label: 1]
+																[Val($0$) $ \leq 4642.50$ \\ Imp. $0.18$
+																	[Label: 0]
+																	[Label: 1]]]]]]]]]
+									[Label: 0]]
+								[Label: 1]]]]]]
+			[Val($0$) $ \leq 4733.00$ \\ Imp. $0.09$
+				[Label: 0]
+				[Val($0$) $ \leq 4920.50$ \\ Imp. $0.08$
+					[Val($4$) $ \leq 1964.50$ \\ Imp. $0.07$
+						[Val($0$) $ \leq 4785.50$ \\ Imp. $0.03$
+							[Val($0$) $ \leq 4760.00$ \\ Imp. $0.38$
+								[Label: 1]
+								[Label: 0]]
+							[Label: 1]]
+						[Val($0$) $ \leq 4787.50$ \\ Imp. $0.10$
+							[Label: 0]
+							[Val($0$) $ \leq 4825.50$ \\ Imp. $0.08$
+								[Label: 1]
+								[Val($0$) $ \leq 4844.50$ \\ Imp. $0.17$
+									[Label: 0]
+									[Val($0$) $ \leq 4888.50$ \\ Imp. $0.11$
+										[Val($0$) $ \leq 4862.00$ \\ Imp. $0.50$
+											[Label: 1]
+											[Label: 0]]
+										[Label: 1]]]]]]
+					[Val($0$) $ \leq 4938.50$ \\ Imp. $0.08$
+						[Label: 0]
+						[Val($4$) $ \leq 1923.50$ \\ Imp. $0.19$
+							[Label: 0]
+							[Val($0$) $ \leq 4957.00$ \\ Imp. $0.04$
+								[Val($0$) $ \leq 4946.50$ \\ Imp. $0.17$
+									[Label: 1]
+									[Label: 0]]
+								[Val($0$) $ \leq 4984.50$ \\ Imp. $0.05$
+									[Label: 1]
+									[Val($0$) $ \leq 4995.50$ \\ Imp. $0.11$
+										[Label: 0]
+										[Label: 1]]]]]]]]]]]
+\node [anchor=north west] at (current bounding box.north east) {%
+                \begin{tabular}{c c c}
+                  \multicolumn{3}{@{}l@{}}{Legend:}\\
+                  Imp.&:&Impurity decrease\\Var(3)&:&floors\\Var(0)&:&area\\Var(4)&:&year_built\\Var(2)&:&bathrooms\\Var(1)&:&bedrooms\\\end{tabular}};
+	\end{forest}
+\end{document}
